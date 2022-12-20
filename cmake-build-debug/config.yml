@@ -1,0 +1,262 @@
+mon:
+  enableMsg: false
+  # msg: " "
+  classCnt: 11
+  classes:
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+#     password: " "
+tue:
+  enableMsg: false
+  # msg: " "
+  classCnt: 11
+  classes:
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+#     password: " "
+wed:
+  enableMsg: false
+  # msg: " "
+  classCnt: 11
+  classes:
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+#     password: " "
+thu:
+  enableMsg: false
+  # msg: " "
+  classCnt: 11
+  classes:
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+#     password: " "
+fri:
+  enableMsg: false
+  # msg: " "
+  classCnt: 11
+  classes:
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+    #     password: " "
+    - name: " "
+      meetingID: " "
+      passwordProtected: false
+#     password: " "
+

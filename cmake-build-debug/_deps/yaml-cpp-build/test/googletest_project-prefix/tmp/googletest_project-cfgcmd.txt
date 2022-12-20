@@ -1,0 +1,1 @@
+cmd='/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake;-DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>;-DBUILD_GMOCK=ON;-Dgtest_force_shared_crt=ON;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

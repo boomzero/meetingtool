@@ -1,0 +1,13 @@
+# Target labels
+ googletest_project
+# Source files and their labels
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/CMakeFiles/googletest_project
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/CMakeFiles/googletest_project.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/CMakeFiles/googletest_project-complete.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-build.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-configure.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-download.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-install.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-mkdir.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-patch.rule
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/test/googletest_project-prefix/src/googletest_project-stamp/googletest_project-update.rule
