@@ -1,262 +1,275 @@
 mon:
   enableMsg: false
   # msg: " "
-  classCnt: 11
+  classCnt: 10
   classes:
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-#     password: " "
+    # password: " "
 tue:
   enableMsg: false
   # msg: " "
-  classCnt: 11
+  classCnt: 10
   classes:
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-#     password: " "
+    # password: " "
 wed:
   enableMsg: false
   # msg: " "
-  classCnt: 11
+  classCnt: 10
   classes:
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-#     password: " "
+    # password: " "
 thu:
   enableMsg: false
   # msg: " "
-  classCnt: 11
+  classCnt: 10
   classes:
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-#     password: " "
+    # password: " "
 fri:
   enableMsg: false
   # msg: " "
-  classCnt: 11
+  classCnt: 10
   classes:
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
+    # password: " "
     - name: " "
+      startTime: " "
       meetingID: " "
       passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-    #     password: " "
-    - name: " "
-      meetingID: " "
-      passwordProtected: false
-#     password: " "
-
+    # password: " "
