@@ -1,4 +1,4 @@
-mon:
+Mon:
   enableMsg: false
   # msg: " "
   classCnt: 10
@@ -53,7 +53,7 @@ mon:
       meetingID: " "
       passwordProtected: false
     # password: " "
-tue:
+Tue:
   enableMsg: false
   # msg: " "
   classCnt: 10
@@ -108,7 +108,7 @@ tue:
       meetingID: " "
       passwordProtected: false
     # password: " "
-wed:
+Wed:
   enableMsg: false
   # msg: " "
   classCnt: 10
@@ -163,7 +163,7 @@ wed:
       meetingID: " "
       passwordProtected: false
     # password: " "
-thu:
+Thu:
   enableMsg: false
   # msg: " "
   classCnt: 10
