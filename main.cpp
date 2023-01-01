@@ -2,6 +2,7 @@
 #include <yaml-cpp/yaml.h>
 #include <chrono>
 
+#define conf config[dow]
 using YAML::Node, YAML::LoadFile;
 using namespace std;
 
@@ -32,12 +33,17 @@ string parseTime() {
 }
 
 int main() {
+    Node config;
     try {
-        Node config = LoadFile("config.yml");
+        config = LoadFile("config.yml");
     } catch (exception &e) {
         cout << e.what() << endl;
         cout << "Using default config" << endl;
     }
-    cout << parseTime() << endl;
+    string dow = parseDayOfWeek();
+    assert(!config.IsNull());
+    if (conf["enableMsg"]) {
+        if (conf["msg"]) cout << conf["msg"] << endl;
+    }
     return 0;
 }

@@ -218,7 +218,7 @@ Thu:
       meetingID: " "
       passwordProtected: false
     # password: " "
-fri:
+Fri:
   enableMsg: false
   # msg: " "
   classCnt: 10
@@ -273,3 +273,9 @@ fri:
       meetingID: " "
       passwordProtected: false
     # password: " "
+Sat:
+  enableMsg: true
+  msg: "It's Saturday, why are you here?"
+Sun:
+  enableMsg: true
+  msg: "It's Sunday, why are you here?"
