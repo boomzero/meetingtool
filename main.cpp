@@ -21,6 +21,16 @@ string parseDayOfWeek() {
     return ans;
 }
 
+string parseTime() {
+    string ct = currTime(), ans;
+    ans.push_back(ct[11]);
+    ans.push_back(ct[12]);
+    ans.push_back(ct[13]);
+    ans.push_back(ct[14]);
+    ans.push_back(ct[15]);
+    return ans;
+}
+
 int main() {
     try {
         Node config = LoadFile("config.yml");
@@ -28,7 +38,6 @@ int main() {
         cout << e.what() << endl;
         cout << "Using default config" << endl;
     }
-    cout << currTime() << endl;
-    cout << parseDayOfWeek() << endl;
+    cout << parseTime() << endl;
     return 0;
 }
