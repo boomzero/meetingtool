@@ -4,20 +4,31 @@
 
 using YAML::Node, YAML::LoadFile;
 using namespace std;
-string currTime(){
-    auto now=chrono::system_clock::now();
-    time_t time=chrono::system_clock::to_time_t(now);
-    return ctime(&time);
+
+string currTime() {
+    auto now = chrono::system_clock::now();
+    time_t time = chrono::system_clock::to_time_t(now);
+    string t = ctime(&time);
+    if (t[t.length() - 1] == '\n') t.pop_back();
+    return t;
 }
+
+string parseDayOfWeek() {
+    string ct = currTime(), ans;
+    ans.push_back(ct[0]);
+    ans.push_back(ct[1]);
+    ans.push_back(ct[2]);
+    return ans;
+}
+
 int main() {
-    try{
+    try {
         Node config = LoadFile("config.yml");
-    } catch (exception& e) {
-        cout<<e.what()<<endl;
-        cout<<"Using default config"<<endl;
+    } catch (exception &e) {
+        cout << e.what() << endl;
+        cout << "Using default config" << endl;
     }
-//    while (true){
-//        cout<<currTime()<<endl;
-//    }
+    cout << currTime() << endl;
+    cout << parseDayOfWeek() << endl;
     return 0;
 }
