@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						3
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -19,7 +20,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						28
+						29
 					]
 				},
 				{
@@ -66,7 +67,7 @@
 						25,
 						26,
 						27,
-						29
+						30
 					]
 				},
 				{
@@ -81,9 +82,24 @@
 					"source" : "cmake-build-debug/_deps/yaml-cpp-src/util",
 					"targetIndexes" : 
 					[
-						30,
 						31,
-						32
+						32,
+						33
+					]
+				},
+				{
+					"build" : "clip",
+					"jsonFile" : "directory-clip-Debug-2ac8257d69713fa21d25.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "clip",
+					"targetIndexes" : 
+					[
+						28
 					]
 				}
 			],
@@ -93,7 +109,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -102,7 +119,7 @@
 					"name" : "meetingtool",
 					"targetIndexes" : 
 					[
-						28
+						29
 					]
 				},
 				{
@@ -143,10 +160,22 @@
 						25,
 						26,
 						27,
-						29,
 						30,
 						31,
-						32
+						32,
+						33
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "clip",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						28
 					]
 				}
 			],
@@ -349,9 +378,16 @@
 					"projectIndex" : 1
 				},
 				{
+					"directoryIndex" : 3,
+					"id" : "clip::@6a258dd22b4012a2d781",
+					"jsonFile" : "target-clip-Debug-2c1bf71af8a1855245e6.json",
+					"name" : "clip",
+					"projectIndex" : 2
+				},
+				{
 					"directoryIndex" : 0,
 					"id" : "meetingtool::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-meetingtool-Debug-cc381c1694cac0652129.json",
+					"jsonFile" : "target-meetingtool-Debug-c483d0f5abbcb169fd62.json",
 					"name" : "meetingtool",
 					"projectIndex" : 0
 				},

@@ -1,7 +1,16 @@
 #include <iostream>
 #include <yaml-cpp/yaml.h>
 #include <chrono>
+#include "clip/clip.h"
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "EndlessLoop"
+#ifdef _WIN32
+#include <windows.h>
+#else
 
+#include <unistd.h>
+
+#endif
 #define conf config[dow]
 using YAML::Node, YAML::LoadFile;
 using namespace std;
@@ -45,5 +54,26 @@ int main() {
     if (conf["enableMsg"]) {
         if (conf["msg"]) cout << conf["msg"] << endl;
     }
-    return 0;
+    int classCnt;
+    if (conf["classCnt"]) {
+        classCnt = conf["classCnt"].as<int>();
+    } else {
+        cerr << "classCnt not found in config, exiting" << endl;
+        return 0;
+    }
+    string time = parseTime(), lc;
+    while (true) {
+        sleep(1);
+        time = parseTime();
+        for (int i = 0; i < classCnt; ++i) {
+            if (!conf["classes"][i]) continue;
+            if (conf["classes"][i]["startTime"]) {
+                if (conf["classes"][i]["startTime"].as<string>() == time) {
+
+                }
+            }
+        }
+    }
 }
+
+#pragma clang diagnostic pop

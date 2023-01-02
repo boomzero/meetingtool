@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 24,
 				"parent" : 0
 			}
 		]
@@ -75,6 +75,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "yaml-cpp::@c1fb6b535d5396bcd0b2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "clip::@6a258dd22b4012a2d781"
 		}
 	],
 	"id" : "meetingtool::@6890427a1f51a3e7e1df",
@@ -93,6 +97,15 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "_deps/yaml-cpp-build/libyaml-cppd.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "clip/libclip.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Xlinker -framework -Xlinker Cocoa",
 				"role" : "libraries"
 			}
 		],

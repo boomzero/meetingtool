@@ -37,3 +37,6 @@
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/CMakeFiles/edit_cache.dir
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/CMakeFiles/rebuild_cache.dir
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/clip/CMakeFiles/clip.dir
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/clip/CMakeFiles/edit_cache.dir
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/clip/CMakeFiles/rebuild_cache.dir

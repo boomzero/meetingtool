@@ -266,6 +266,9 @@
 		{
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/_deps/yaml-cpp-src/util/CMakeLists.txt"
+		},
+		{
+			"path" : "clip/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

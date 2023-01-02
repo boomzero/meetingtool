@@ -44,7 +44,7 @@ cmake_ninja_workdir = /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/
 #############################################
 # Order-only phony target for meetingtool
 
-build cmake_object_order_depends_target_meetingtool: phony || cmake_object_order_depends_target_yaml-cpp
+build cmake_object_order_depends_target_meetingtool: phony || cmake_object_order_depends_target_clip cmake_object_order_depends_target_yaml-cpp
 
 build CMakeFiles/meetingtool.dir/main.cpp.o: CXX_COMPILER__meetingtool_Debug /Users/chenqi/CLionProjects/meetingtool/main.cpp || cmake_object_order_depends_target_meetingtool
   DEP_FILE = CMakeFiles/meetingtool.dir/main.cpp.o.d
@@ -61,9 +61,9 @@ build CMakeFiles/meetingtool.dir/main.cpp.o: CXX_COMPILER__meetingtool_Debug /Us
 #############################################
 # Link the executable meetingtool
 
-build meetingtool: CXX_EXECUTABLE_LINKER__meetingtool_Debug CMakeFiles/meetingtool.dir/main.cpp.o | _deps/yaml-cpp-build/libyaml-cppd.a || _deps/yaml-cpp-build/libyaml-cppd.a
+build meetingtool: CXX_EXECUTABLE_LINKER__meetingtool_Debug CMakeFiles/meetingtool.dir/main.cpp.o | _deps/yaml-cpp-build/libyaml-cppd.a clip/libclip.a || _deps/yaml-cpp-build/libyaml-cppd.a clip/libclip.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6
-  LINK_LIBRARIES = _deps/yaml-cpp-build/libyaml-cppd.a
+  LINK_LIBRARIES = _deps/yaml-cpp-build/libyaml-cppd.a  clip/libclip.a  -Xlinker -framework -Xlinker Cocoa
   OBJECT_DIR = CMakeFiles/meetingtool.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -884,6 +884,78 @@ build _deps/yaml-cpp-build/util/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build _deps/yaml-cpp-build/util/rebuild_cache: phony _deps/yaml-cpp-build/util/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/chenqi/CLionProjects/meetingtool/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target clip
+
+
+#############################################
+# Order-only phony target for clip
+
+build cmake_object_order_depends_target_clip: phony || clip/CMakeFiles/clip.dir
+
+build clip/CMakeFiles/clip.dir/clip.cpp.o: CXX_COMPILER__clip_Debug /Users/chenqi/CLionProjects/meetingtool/clip/clip.cpp || cmake_object_order_depends_target_clip
+  DEP_FILE = clip/CMakeFiles/clip.dir/clip.cpp.o.d
+  FLAGS = -stdlib=libc++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics   -fobjc-arc -std=gnu++11
+  OBJECT_DIR = clip/CMakeFiles/clip.dir
+  OBJECT_FILE_DIR = clip/CMakeFiles/clip.dir
+
+build clip/CMakeFiles/clip.dir/image.cpp.o: CXX_COMPILER__clip_Debug /Users/chenqi/CLionProjects/meetingtool/clip/image.cpp || cmake_object_order_depends_target_clip
+  DEP_FILE = clip/CMakeFiles/clip.dir/image.cpp.o.d
+  FLAGS = -stdlib=libc++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics   -fobjc-arc -std=gnu++11
+  OBJECT_DIR = clip/CMakeFiles/clip.dir
+  OBJECT_FILE_DIR = clip/CMakeFiles/clip.dir
+
+build clip/CMakeFiles/clip.dir/clip_osx.mm.o: CXX_COMPILER__clip_Debug /Users/chenqi/CLionProjects/meetingtool/clip/clip_osx.mm || cmake_object_order_depends_target_clip
+  DEP_FILE = clip/CMakeFiles/clip.dir/clip_osx.mm.o.d
+  FLAGS = -stdlib=libc++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics   -fobjc-arc -std=gnu++11
+  OBJECT_DIR = clip/CMakeFiles/clip.dir
+  OBJECT_FILE_DIR = clip/CMakeFiles/clip.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target clip
+
+
+#############################################
+# Link the static library clip/libclip.a
+
+build clip/libclip.a: CXX_STATIC_LIBRARY_LINKER__clip_Debug clip/CMakeFiles/clip.dir/clip.cpp.o clip/CMakeFiles/clip.dir/image.cpp.o clip/CMakeFiles/clip.dir/clip_osx.mm.o
+  ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.0.sdk -mmacosx-version-min=12.6
+  LANGUAGE_COMPILE_FLAGS = -stdlib=libc++ -g
+  OBJECT_DIR = clip/CMakeFiles/clip.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = clip/libclip.a
+  TARGET_PDB = clip.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build clip/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/clip && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build clip/edit_cache: phony clip/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build clip/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/clip && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/chenqi/CLionProjects/meetingtool -B/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build clip/rebuild_cache: phony clip/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Continuous: phony _deps/yaml-cpp-build/Continuous
@@ -942,6 +1014,10 @@ build NightlyTest: phony _deps/yaml-cpp-build/NightlyTest
 
 build NightlyUpdate: phony _deps/yaml-cpp-build/NightlyUpdate
 
+build clip: phony clip/libclip.a
+
+build libclip.a: phony clip/libclip.a
+
 build libyaml-cppd.a: phony _deps/yaml-cpp-build/libyaml-cppd.a
 
 build parse: phony _deps/yaml-cpp-build/util/parse
@@ -966,7 +1042,7 @@ build yaml-cpp-sandbox: phony _deps/yaml-cpp-build/util/sandbox
 #############################################
 # Folder: /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug
 
-build all: phony meetingtool _deps/yaml-cpp-build/all
+build all: phony meetingtool _deps/yaml-cpp-build/all clip/all
 
 # =============================================================================
 
@@ -981,6 +1057,13 @@ build _deps/yaml-cpp-build/all: phony _deps/yaml-cpp-build/libyaml-cppd.a _deps/
 # Folder: /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util
 
 build _deps/yaml-cpp-build/util/all: phony _deps/yaml-cpp-build/util/sandbox _deps/yaml-cpp-build/util/parse _deps/yaml-cpp-build/util/read
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/clip
+
+build clip/all: phony clip/libclip.a
 
 # =============================================================================
 # Built-in targets
@@ -1003,14 +1086,14 @@ build /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/CMakeFiles/cmake
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/CMakeFiles/cmake.verify_globs | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/chenqi/CLionProjects/meetingtool/CMakeLists.txt /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/yaml-cpp-src/CMakeLists.txt _deps/yaml-cpp-src/util/CMakeLists.txt _deps/yaml-cpp-src/yaml-cpp-config.cmake.in _deps/yaml-cpp-src/yaml-cpp.pc.in
+build build.ninja: RERUN_CMAKE /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/CMakeFiles/cmake.verify_globs | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/chenqi/CLionProjects/meetingtool/CMakeLists.txt /Users/chenqi/CLionProjects/meetingtool/clip/CMakeLists.txt /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/yaml-cpp-src/CMakeLists.txt _deps/yaml-cpp-src/util/CMakeLists.txt _deps/yaml-cpp-src/yaml-cpp-config.cmake.in _deps/yaml-cpp-src/yaml-cpp.pc.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/chenqi/CLionProjects/meetingtool/CMakeLists.txt /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/yaml-cpp-src/CMakeLists.txt _deps/yaml-cpp-src/util/CMakeLists.txt _deps/yaml-cpp-src/yaml-cpp-config.cmake.in _deps/yaml-cpp-src/yaml-cpp.pc.in: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTest.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestTargets.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CTestUseLaunchers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/DartConfiguration.tcl.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindGit.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/chenqi/CLionProjects/meetingtool/CMakeLists.txt /Users/chenqi/CLionProjects/meetingtool/clip/CMakeLists.txt /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/yaml-cpp-src/CMakeLists.txt _deps/yaml-cpp-src/util/CMakeLists.txt _deps/yaml-cpp-src/yaml-cpp-config.cmake.in _deps/yaml-cpp-src/yaml-cpp.pc.in: phony
 
 
 #############################################
