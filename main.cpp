@@ -2,6 +2,7 @@
 #include <yaml-cpp/yaml.h>
 #include <chrono>
 #include "clip/clip.h"
+
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
 #ifdef _WIN32
@@ -12,7 +13,7 @@
 
 #endif
 #define conf config[dow]
-using YAML::Node, YAML::LoadFile;
+using YAML::Node, YAML::LoadFile, clip::set_text;
 using namespace std;
 
 string currTime() {
@@ -69,7 +70,24 @@ int main() {
             if (!conf["classes"][i]) continue;
             if (conf["classes"][i]["startTime"]) {
                 if (conf["classes"][i]["startTime"].as<string>() == time) {
-
+                    if (lc != time) {
+                        lc = time;
+                        assert(conf["classes"][i]["meetingID"]);
+                        set_text(conf["classes"][i]["meetingID"].as<string>());
+                        assert(conf["classes"][i]["name"]);
+                        cout << "现在是" << time << "," << conf["classes"][i]["name"] << "会议号已复制" << endl;
+                        if (conf["classes"][i]["passwordProtected"]) {
+                            if (conf["classes"][i]["passwordProtected"].as<bool>()) {
+                                cout << "该会议有密码，是否复制密码？(y/n)";
+                                char flag;
+                                cin >> flag;
+                                if (tolower(flag) == 'y') {
+                                    assert(conf["classes"][i]["password"]);
+                                    set_text(conf["classes"][i]["password"].as<string>());
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
