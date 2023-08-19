@@ -91,7 +91,15 @@ int main() {
                         }
                         if (conf["classes"][i]["autoJoin"]) {
                             if (conf["classes"][i]["autoJoin"].as<bool>()) {
+#ifdef _WIN32
+
+                                string cmd = "start \"wemeet://page/inmeeting?meeting_code={";
+
+#else
+
                                 string cmd = "open \"wemeet://page/inmeeting?meeting_code={";
+
+#endif
                                 cmd.append(conf["classes"][i]["meetingID"].as<string>());
                                 cmd.append("}\";");
                                 system(cmd.c_str());
