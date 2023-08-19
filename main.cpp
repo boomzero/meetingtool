@@ -92,9 +92,10 @@ int main() {
                         if (conf["classes"][i]["autoJoin"]) {
                             if (conf["classes"][i]["autoJoin"].as<bool>()) {
                                 string cmd = "open \"wemeet://page/inmeeting?meeting_code={";
-                                cmd.append(to_string(
-                                        conf["classes"][i]["meetingID"].as<long long>())); //preventing shell injection
+                                cmd.append(conf["classes"][i]["meetingID"].as<string>());
                                 cmd.append("}\";");
+                                system(cmd.c_str());
+                                cout << "已自动进入会议" << endl;
                             }
                         }
                     }
