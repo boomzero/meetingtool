@@ -6,7 +6,9 @@
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
 #ifdef _WIN32
+
 #include <windows.h>
+
 #else
 
 #include <unistd.h>
@@ -85,6 +87,14 @@ int main() {
                                     assert(conf["classes"][i]["password"]);
                                     set_text(conf["classes"][i]["password"].as<string>());
                                 }
+                            }
+                        }
+                        if (conf["classes"][i]["autoJoin"]) {
+                            if (conf["classes"][i]["autoJoin"].as<bool>()) {
+                                string cmd = "open \"wemeet://page/inmeeting?meeting_code={";
+                                cmd.append(to_string(
+                                        conf["classes"][i]["meetingID"].as<long long>())); //preventing shell injection
+                                cmd.append("}\";");
                             }
                         }
                     }

@@ -11,4 +11,4 @@ set(YAML_CPP_INCLUDE_DIR "")
 include("${YAML_CPP_CMAKE_DIR}/yaml-cpp-targets.cmake")
 
 # These are IMPORTED targets created by yaml-cpp-targets.cmake
-set(YAML_CPP_LIBRARIES "yaml-cpp")
+set(YAML_CPP_LIBRARIES "")

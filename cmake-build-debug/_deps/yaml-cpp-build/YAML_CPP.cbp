@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="YAML_CPP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\yaml-cpp-src\;CMake Files\cmake-build-debug\_deps\yaml-cpp-src\util\;CMake Files\clip\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/libyaml-cppd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 yaml-cpp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp/fast">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/libyaml-cppd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 yaml-cpp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="format">
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 format"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp-sandbox">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/sandbox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 yaml-cpp-sandbox"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp-sandbox/fast">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/sandbox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 yaml-cpp-sandbox/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp-parse">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/parse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 yaml-cpp-parse"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp-parse/fast">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/parse" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 yaml-cpp-parse/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp-read">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/read" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 yaml-cpp-read"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yaml-cpp-read/fast">
+				<Option output="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/read" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 yaml-cpp-read/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/binary.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/contrib/graphbuilder.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/contrib/graphbuilderadapter.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/contrib/graphbuilderadapter.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/convert.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/depthguard.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/directives.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/directives.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/emit.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/emitfromevents.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/emitter.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/emitterstate.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/emitterstate.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/emitterutils.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/emitterutils.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/exceptions.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/exp.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/exp.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/memory.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/node.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/node_data.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/nodebuilder.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/nodebuilder.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/nodeevents.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/nodeevents.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/null.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/ostream_wrapper.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/parse.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/parser.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/regex_yaml.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/regex_yaml.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/scanner.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/scanner.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/scanscalar.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/scanscalar.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/scantag.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/scantag.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/scantoken.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/simplekey.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/singledocparser.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/singledocparser.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/stream.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/stream.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/tag.cpp">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/src/tag.h">
+			<Option target="yaml-cpp"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/util/parse.cpp">
+			<Option target="yaml-cpp-parse"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/util/read.cpp">
+			<Option target="yaml-cpp-read"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/util/sandbox.cpp">
+			<Option target="yaml-cpp-sandbox"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\yaml-cpp-src\"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/yaml-cpp-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\yaml-cpp-src\"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/yaml-cpp.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\yaml-cpp-src\"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-src/util/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\yaml-cpp-src\util\"/>
+		</Unit>
+		<Unit filename="/Users/chenqi/CLionProjects/meetingtool/clip/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\clip\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

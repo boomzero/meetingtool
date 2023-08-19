@@ -30,6 +30,7 @@
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/CMakeFiles/ContinuousMemCheck.dir
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/CMakeFiles/ContinuousSubmit.dir
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir
+/Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/CMakeFiles/format.dir
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/CMakeFiles/edit_cache.dir
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/CMakeFiles/rebuild_cache.dir
 /Users/chenqi/CLionProjects/meetingtool/cmake-build-debug/_deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir
