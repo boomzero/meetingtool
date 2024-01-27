@@ -97,11 +97,11 @@ int main() {
 
 #else
 
-                                string cmd = "open \"wemeet://page/inmeeting?meeting_code={";
+                                string cmd = "open \"wemeet://page/inmeeting?meeting_code=";
 
 #endif
                                 cmd.append(conf["classes"][i]["meetingID"].as<string>());
-                                cmd.append("}\";");
+                                cmd.append("\";");
                                 system(cmd.c_str());
                                 cout << "已自动进入会议" << endl;
                             }
