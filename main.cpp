@@ -98,22 +98,20 @@ int main() {
                                 }
                             }
                         }
-                        if (conf["classes"][i]["autoJoin"]) {
-                            if (conf["classes"][i]["autoJoin"].as<bool>()) {
+                        if (conf["classes"][i]["autoJoin"] ? conf["classes"][i]["autoJoin"].as<bool>() : true) {
 #ifdef _WIN32
 
-                                string cmd = "start \"wemeet://page/inmeeting?meeting_code={";
+                            string cmd = "start \"wemeet://page/inmeeting?meeting_code={";
 
 #else
 
-                                string cmd = "open \"wemeet://page/inmeeting?meeting_code=";
+                            string cmd = "open \"wemeet://page/inmeeting?meeting_code=";
 
 #endif
-                                cmd.append(meetingCode);
-                                cmd.append("\";");
-                                system(cmd.c_str());
-                                cout << "已自动进入会议" << endl;
-                            }
+                            cmd.append(meetingCode);
+                            cmd.append("\";");
+                            system(cmd.c_str());
+                            cout << "已自动进入会议" << endl;
                         }
                     }
                 }
