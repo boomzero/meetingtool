@@ -19,15 +19,16 @@ using YAML::Node, YAML::LoadFile, clip::set_text;
 using namespace std;
 
 string currTime() {
-    auto now = chrono::system_clock::now();
-    time_t time = chrono::system_clock::to_time_t(now);
+    const auto now = chrono::system_clock::now();
+    const time_t time = chrono::system_clock::to_time_t(now);
     string t = ctime(&time);
     if (t[t.length() - 1] == '\n') t.pop_back();
     return t;
 }
 
 string parseDayOfWeek() {
-    string ct = currTime(), ans;
+    const string ct = currTime();
+    string ans;
     ans.push_back(ct[0]);
     ans.push_back(ct[1]);
     ans.push_back(ct[2]);
@@ -35,7 +36,8 @@ string parseDayOfWeek() {
 }
 
 string parseTime() {
-    string ct = currTime(), ans;
+    const string ct = currTime();
+    string ans;
     ans.push_back(ct[11]);
     ans.push_back(ct[12]);
     ans.push_back(ct[13]);
