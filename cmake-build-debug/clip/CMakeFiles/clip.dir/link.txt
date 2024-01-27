@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libclip.a CMakeFiles/clip.dir/clip.cpp.o CMakeFiles/clip.dir/image.cpp.o CMakeFiles/clip.dir/clip_osx.mm.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libclip.a
