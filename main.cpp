@@ -75,7 +75,14 @@ int main() {
                     if (lc != time) {
                         lc = time;
                         assert(conf["classes"][i]["meetingID"]);
-                        set_text(conf["classes"][i]["meetingID"].as<string>());
+                        auto meetingCode = conf["classes"][i]["meetingID"].as<string>(); //parse the meetingcode
+                        while (meetingCode.find(' ') != string::npos) {
+                            meetingCode.erase(meetingCode.find(' '), 1);
+                        }
+                        while (meetingCode.find('-') != string::npos) {
+                            meetingCode.erase(meetingCode.find('-'), 1);
+                        }
+                        set_text(meetingCode);
                         assert(conf["classes"][i]["name"]);
                         cout << "现在是" << time << "," << conf["classes"][i]["name"] << "会议号已复制" << endl;
                         if (conf["classes"][i]["passwordProtected"]) {
@@ -100,7 +107,7 @@ int main() {
                                 string cmd = "open \"wemeet://page/inmeeting?meeting_code=";
 
 #endif
-                                cmd.append(conf["classes"][i]["meetingID"].as<string>());
+                                cmd.append(meetingCode);
                                 cmd.append("\";");
                                 system(cmd.c_str());
                                 cout << "已自动进入会议" << endl;
