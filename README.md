@@ -1,4 +1,6 @@
 # meetingtool
+[![CI/build](https://github.com/boomzero/meetingtool/actions/workflows/build.yml/badge.svg)](https://github.com/boomzero/meetingtool/actions/workflows/build.yml)
+
 Are you looking for a convenient and easy way to join your online classes? Do you want to avoid the hassle of typing in meeting IDs and passwords every time? Do you wish you could just copy and paste the information with one click? If you answered yes to any of these questions, then you need to check out this amazing code!
 
 This code is a simple and effective solution for joining your online classes on WeMeet. It uses a YAML file to store your class information, such as name, meeting ID, password, start time, and whether you want to auto-join or not. It also uses the clip library to copy the meeting ID or password to your clipboard whenever a class starts. It even opens the WeMeet app for you if you enable the auto-join option. All you need to do is run this code in the background and let it do the work for you!
